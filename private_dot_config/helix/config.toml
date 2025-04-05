@@ -1,0 +1,14 @@
+theme="catppuccin_frappe"
+[editor]
+line-number = "relative"
+mouse = true
+default-yank-register = "+"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.soft-wrap]
+enable = true
+
