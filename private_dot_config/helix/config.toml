@@ -11,13 +11,13 @@ select = "underline"
 enable = true
 
 [keys.normal]
-j = "move_char_left"
-k = "move_line_down" 
-l = "move_line_up"
-";" = "move_char_right"
+P = [
+  "open_below",        # Open a new line above current
+  "normal_mode",       # Return to normal mode
+  "open_below",        # Open a new line below
+  "normal_mode",       # Return to normal mode
+  "move_line_up",      # Move up to the first empty line
+  "paste_after",       # Paste the content
+  "move_line_down"     # Move down to position cursor after pasted content
+]
 
-[keys.select]
-j = "extend_char_left"
-k = "extend_line_down"
-l = "extend_line_up"
-";" = "extend_char_right"
