@@ -12,7 +12,7 @@ enable = true
 
 [keys.normal]
 P = [
-  "open_below",        # Open a new line above current
+  "open_below",        # Open a new line below
   "normal_mode",       # Return to normal mode
   "open_below",        # Open a new line below
   "normal_mode",       # Return to normal mode
@@ -21,3 +21,8 @@ P = [
   "move_line_down"     # Move down to position cursor after pasted content
 ]
 
+tab = "goto_last_accessed_file"
+
+backspace = "delete_char_backward"
+
+ret = ["open_below", "normal_mode"]
