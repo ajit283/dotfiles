@@ -1,14 +1,24 @@
 theme="catppuccin_mocha"
 [editor]
 default-yank-register = "+"
+bufferline="multiple"
 
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
 select = "underline"
 
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "file-name"]
+
 [editor.soft-wrap]
 enable = true
+
+[editor.file-picker]
+hidden = false
+
+[editor.whitespace.render]
+space = "all"
 
 [keys.normal]
 P = [
