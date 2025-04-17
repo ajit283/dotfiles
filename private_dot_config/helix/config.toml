@@ -34,7 +34,7 @@ l = "symbol_picker"
 k = "buffer_picker"
 f = "file_picker"
 
-T = "@miW"
+t = "@miW"
 
 "C-u" = ["scroll_up", "scroll_up", "scroll_up", "scroll_up", "scroll_up", "scroll_up", "scroll_up", "scroll_up"]
 "C-d" = ["scroll_down", "scroll_down", "scroll_down", "scroll_down", "scroll_down", "scroll_down", "scroll_down", "scroll_down"]
@@ -51,7 +51,7 @@ l = "symbol_picker"
 k = "buffer_picker"
 f = "file_picker"
 
-T = "@miW"
+t = "@miW"
 
 "C-u" = ["scroll_up", "scroll_up", "scroll_up", "scroll_up", "scroll_up", "scroll_up", "scroll_up", "scroll_up"]
 "C-d" = ["scroll_down", "scroll_down", "scroll_down", "scroll_down", "scroll_down", "scroll_down", "scroll_down", "scroll_down"]
