@@ -1,7 +1,8 @@
 theme="catppuccin_mocha"
 [editor]
 default-yank-register = "+"
-bufferline="multiple"
+
+jump-label-alphabet = "asdfjkl;ghqweruioptyzxcvn,m."
 
 [editor.cursor-shape]
 insert = "bar"
@@ -10,15 +11,12 @@ select = "underline"
 
 [editor.statusline]
 left = ["mode", "spinner", "version-control", "file-name"]
-
+right =  ["diagnostics", "selections", "register", "position-percentage", "position", "file-encoding"]
 [editor.soft-wrap]
 enable = true
 
 [editor.file-picker]
 hidden = false
-
-[editor.whitespace.render]
-space = "all"
 
 [keys.normal]
 P = [
@@ -31,8 +29,29 @@ P = [
   "move_line_down"     # Move down to position cursor after pasted content
 ]
 
+j = "goto_word"
+l = "symbol_picker"
+k = "buffer_picker"
+f = "file_picker"
+
+T = "@miW"
+
+"C-u" = ["scroll_up", "scroll_up", "scroll_up", "scroll_up", "scroll_up", "scroll_up", "scroll_up", "scroll_up"]
+"C-d" = ["scroll_down", "scroll_down", "scroll_down", "scroll_down", "scroll_down", "scroll_down", "scroll_down", "scroll_down"]
+
 tab = "goto_last_accessed_file"
 
 backspace = "delete_char_backward"
 
 ret = ["open_below", "normal_mode"]
+
+[keys.select]
+j = "extend_to_word"
+l = "symbol_picker"
+k = "buffer_picker"
+f = "file_picker"
+
+T = "@miW"
+
+"C-u" = ["scroll_up", "scroll_up", "scroll_up", "scroll_up", "scroll_up", "scroll_up", "scroll_up", "scroll_up"]
+"C-d" = ["scroll_down", "scroll_down", "scroll_down", "scroll_down", "scroll_down", "scroll_down", "scroll_down", "scroll_down"]
