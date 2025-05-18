@@ -39,6 +39,9 @@ t = "@miW"
 "C-u" = ["scroll_up", "scroll_up", "scroll_up", "scroll_up", "scroll_up", "scroll_up", "scroll_up", "scroll_up"]
 "C-d" = ["scroll_down", "scroll_down", "scroll_down", "scroll_down", "scroll_down", "scroll_down", "scroll_down", "scroll_down"]
 
+"C-r" = ":rl"
+"C-x" = [":w", ":! completeme"]
+
 tab = "goto_last_accessed_file"
 
 backspace = "delete_char_backward"
