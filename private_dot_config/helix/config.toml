@@ -41,6 +41,7 @@ t = "@miW"
 
 "C-r" = ":rl"
 "C-x" = [":w", ":! completeme"]
+"C-q" = ":! pkill completeme"
 
 tab = "goto_last_accessed_file"
 
