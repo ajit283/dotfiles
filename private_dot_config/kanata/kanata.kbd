@@ -1,0 +1,39 @@
+#|
+This minimal config changes Caps Lock to act as Caps Lock on quick tap, but
+if held, it will act as Left Ctrl. It also changes the backtick/grave key to
+act as backtick/grave on quick tap, but change ijkl keys to arrow keys on hold.
+
+This text between the two pipe+octothorpe sequences is a multi-line comment.
+|#
+
+;; Text after double-semicolons are single-line comments.
+
+#|
+One  entry may be added, which is used for configuration key-pairs. These
+configurations change kanata's behaviour at a more global level than the other
+configuration entries.
+|#
+
+
+(defsrc
+  caps spc         
+  w e r s d f x c v a            j    k    l  ;
+  lsft rsft
+)
+
+(deflayer default
+  @cap @spc        
+  _ _ _ _ _ _ _ _ _ _          _    _    _    _
+  _    _
+)
+
+(deflayer arrows
+  _    _           
+   1 2 3 4 5 6 7 8 9 0            left down up rght
+  _    _
+)
+
+(defalias
+  cap (tap-hold-release 200 200 esc lctl)
+  spc (tap-hold-release 200 200 spc (layer-toggle arrows))
+)
